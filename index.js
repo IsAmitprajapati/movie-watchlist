@@ -73,11 +73,11 @@ function addWatchlist(e){
         watchlistData = arr;
        
        //get data from specific object
-        let checkid = watchlistData.filter(preve => preve.imdbID === obj[0].imdbID)
-        console.log(checkid[0].imdbID)
+        // let checkid = 
+        
         
         //check the data already added 
-        if(checkid[0].imdbID == obj[0].imdbID){
+        if(obj[0].imdbID == watchlistData.filter(preve => preve.imdbID === obj[0].imdbID) ){
             alert("Already add watchlist")
         }
         else{ // not added in this section
